@@ -4,9 +4,17 @@ cyt_report=../data/07_cytosine_report/one_mismatch.K562_1_chr22_val_1_bismark_bt
 chr_sizes=../data/00_util/hg38.chrom.sizes
 
 
+
+
 sort --output=${cyt_report}.sorted --parallel=2 --buffer-size=5G -k 1,1 -k2,2n ${cyt_report}
 
+
+
+
 awk '{FS="\t";OFS="\t"} { print $1,$2,$2+1,$4 }' ${cyt_report}.sorted  > ${cyt_report}.sorted.meth  
+
+
+
 
 # echo "bedClip meth."; date
 # bedClip -verbose=2 \
