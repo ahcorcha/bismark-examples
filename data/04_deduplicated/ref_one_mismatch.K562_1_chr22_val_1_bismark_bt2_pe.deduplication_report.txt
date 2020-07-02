@@ -1,0 +1,7 @@
+
+Total number of alignments analysed in ./data/03_aligned/one_mismatch.K562_1_chr22_val_1_bismark_bt2_pe.bam:	996885
+Total number duplicated alignments removed:	40485 (4.06%)
+Duplicated alignments were found at:	39055 different position(s)
+
+Total count of deduplicated leftover sequences: 956400 (95.94% of total)
+
